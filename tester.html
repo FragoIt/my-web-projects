@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejemplo formulario atributos</h1>
+    		<form method="get"
+    			action="xxxx">
+    			<fieldset>
+    				<legend>Datos a rellenar por la administración</legend>
+    				<label>Nombre del curso</label>
+    				<input name="nombre_curso"
+    					value="Creación páginas web" readonly>
+    		<br/><br/>
+    				<label>Código del curso</label>
+    				<input name="código_curso"
+    					value="2015/F1710031" readonly>
+    		<br/>
+    			<fieldset>
+    				<legend>Datos personales</legend>
+    				<label>Nombre*</label>
+    				<input name="nombre_alum" maxlength=10 
+    					autofocus required/>
+    				<label>Apellidos*</label>
+    				<input name="apellidos_alum" maxlength=30 required />
+    		<br/><br/>
+    				<label>Documento*</label>
+    				<input name="documento" placeholder="escriba su DNI"
+    						required />
+    				<label>Edad*</label>
+    				<input name="edad" placeholder="Mayores de 18"/>
+                    <type= "" min="18" required />
+    		<br/><br/>
+    				<label>Observaciones</label>
+    				<textarea  name="notas" rows=3 cols=20 
+    			placeholder="Si necesita, escriba aquí sus observaciones">
+    			</textarea></fieldset>
+    		<br/><br/>
+    			<button>Enviar</button>
+    		</form>
+</body>
+</html>
